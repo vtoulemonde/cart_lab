@@ -34,6 +34,11 @@ class ItemsController < ApplicationController
 		render json: {}
 	end
 
+	def empty
+		Item.destroy_all
+		render json: {}
+	end
+
 	private
 
 	def params_item

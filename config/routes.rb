@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   resources :items
 
   delete 'items' => 'items#destroy'
+
+  post 'items/empty' => 'items#empty'
   
 end
